@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-votb
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0006-tenant/tkrw-pr712-0075-0006-app/devfile-sample-votb@sha256:a0443cfcae7b19560a4b6aac2c741f2850e734375040d7b044a7b6e32e3bb0d9
+        name: my-nodejs
+        resources: {}
+status: {}
